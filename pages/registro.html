@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link href="mobile.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+    <link href="../style/mobile.css" rel="stylesheet">
     <title>Login</title>
 </head>
 
 <body>
 
     <div class="container">
-
         <div class="hero">
             <p>
                 "Educação não é o aprendizado de fatos,
@@ -23,16 +22,19 @@
     
         <div class="formulario">
             <div>
-                <h1>Esqueci minha senha</h1>
-                <p>Informe seu e-mail para enviarmos o link para redefir sua senha.</p>
+                <h1>Cadastre-se</h1>
+                <p>
+                    Passo 1 de 2. <br/>
+                    Por favor insira seu CPF para prosseguir.
+                </p>
         
-                <form action="/login" method="post">
-                    <label for="email">Endereço de e-mail</label>
-                    <input name="email" id="email" type="text" placeholder="user@email.com" />
+                <label for="cpf">CPF</label>
+                <input name="cpf" id="cpf" type="text" placeholder="000.000.000-00" />
         
-                    <button type="submit">Enviar</button>
-                </form>
+                <a href="registro-2.html">Prosseguir</a>
             </div>
+            
+            
         </div>
     </div>
 
