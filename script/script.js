@@ -21,6 +21,7 @@ function getMsg(){
 const greeting = document.getElementById('greeting');
 greeting.textContent = `${getMsg()}, ${pessoa.nome}`;
 
+moment.locale('pt-br');
 const dataHoje = document.getElementById('dataHoje');
 dataHoje.textContent = moment().format('MMMM Do YYYY, h:mm:ss a');
 

@@ -1,0 +1,24 @@
+{
+  "name": "app-aluno-q",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo usado nas aulas de frontend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuizaBordignon/app-aluno-q.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LuizaBordignon/app-aluno-q/issues"
+  },
+  "homepage": "https://github.com/LuizaBordignon/app-aluno-q#readme",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
