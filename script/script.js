@@ -1,3 +1,4 @@
+
 const pessoa = {
     nome: 'Paulo',
     idade: 33,
@@ -24,6 +25,19 @@ greeting.textContent = `${getMsg()}, ${pessoa.nome}`;
 moment.locale('pt-br');
 const dataHoje = document.getElementById('dataHoje');
 dataHoje.textContent = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+const dataVencimento = moment().add(5, 'days');
+const diasRestantes = dataVencimento.diff(moment(), 'days');
+const vencido = diasRestantes < 0;
+
+let mensagem;
+if (vencido) {
+    mensagem = 'Venceu ' + dataVencimento.fromNow(); // "Venceu há 5 dias"
+} else {
+    mensagem = 'Vence ' + dataVencimento.fromNow();  //  "Vence em 5 dias"
+}
+
+document.getElementById('textoVencimento').textContent = mensagem;
 
 /* 
 Banners indicadores (fácil)
